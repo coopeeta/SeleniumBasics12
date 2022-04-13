@@ -53,4 +53,5 @@ verify the textbox is disabled
 
 create a package and name it as utils
 create a class and name as CommonMethods
-create functions (methods) to open and close the browsers
+create functions (methods) to open and close and quit the browsers
+open method has to accept a url as a parameter

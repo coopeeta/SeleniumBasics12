@@ -29,7 +29,6 @@ public class HandlingDynamicTables {
                 List<WebElement> checkboxes = driver.findElements(By.xpath("//table[@class = 'SampleTable']/tbody/tr/td[1]"));
                 checkboxes.get(i-1).click();
             }
-
         }
     }
 }
