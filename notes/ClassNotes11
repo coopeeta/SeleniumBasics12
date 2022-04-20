@@ -1,0 +1,72 @@
+Selenium Class 11
+
+If regular click does not work you can use the alternative
+way of having Actions class click method
+
+Upload Documents:
+In order to upload documents using selenium we simply do
+sendKeys(filePath)
+
+If sendKeys does not work, you can use Robot class
+
+JavaScriptExecutor
+it is a library in selenium which can be executed in different programming languages
+(java, c#, python etc)
+
+JSExecutor is an interface
+
+Actions which can be performed by using JSExecutor:
+Click on the element --> last option if regular click and actions click dont work
+                            js.executeScript("arguments[0].style.backgroundColor='green'", password);
+scroll through the page
+refresh the page
+highlight an element
+scroll to a specific element
+open a new tab
+
+HW
+open new browser
+open a new tab
+navigate to a different URL on a new tab -- use window handles
+
+HW:
+TC 1: HRMS blank password validation
+Navigate to “http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login”
+Enter valid username and leave password field empty
+Click on login button
+Verify error message with text “Password cannot be empty” is displayed
+Take a screenshot before quitting the browser
+
+
+TC 2: HRMS blank username and password validation
+Navigate to “http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login”
+Leave username and password field empty
+Click on login button
+Verify error message with text “Username cannot be empty” is displayed
+Take a screenshot before quitting the browser
+
+
+TC 2: HRMS invalid credentials validation
+Navigate to “http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login”
+Enter valid username and wrong password
+Click on login button
+Verify error message with text “Invalid credentials” is displayed
+Take a screenshot before quitting the browser
+
+TC:4 --> do on selenium project
+Go to http://www.uitestpractice.com/
+interact with drag and drop, iframe, double click
+click on home
+delete one user from the table
+go to the next link
+click on the ajax link and wait for the text
+verify that the text is displayed
+go to Form
+and fill out everything
+go to widgets
+upload any file and verify it is uploaded
+go to actions and perform all the necessary actions
+go to SwitchTo
+work with alerts and frames
+go to select
+perform actions on all dropdowns

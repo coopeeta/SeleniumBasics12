@@ -27,7 +27,6 @@ public class ExplicitWaitDemo {
 
         WebDriverWait wait = new WebDriverWait(driver, 20);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[contains(text(), 'First Name')]")));
-
         WebElement firstName = driver.findElement(By.xpath("//p[contains(text(), 'First Name')]"));
         System.out.println(firstName.getText());
 
