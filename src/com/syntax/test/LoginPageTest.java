@@ -13,6 +13,6 @@ public class LoginPageTest {
         loginPage.password.sendKeys("test");
         loginPage.loginButton.click();
 
-        //break till 8:24pm
+        BaseClass.tearDown();
     }
 }
